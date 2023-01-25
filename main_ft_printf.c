@@ -6,7 +6,7 @@
 /*   By: tayou <tayou@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/15 20:27:20 by tayou             #+#    #+#             */
-/*   Updated: 2023/01/21 17:30:52 by tayou            ###   ########.fr       */
+/*   Updated: 2023/01/23 17:47:11 by tayou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,8 @@ int	main(void)
 	address = name;
 	number = -2147483648;
 	unsigned_number = 0;
-	return_printf = printf("name: %s, address: %p, number: %d, unsigned_number: %u,\nhexa_number: %x, hexa_number: %X, percent_sign: %%\n", name, address, number, unsigned_number, unsigned_number, unsigned_number);
-	return_ft_printf = ft_printf("name: %s, address: %p, number: %d, unsigned_number: %u,\nhexa_number: %x, hexa_number: %X, percent_sign: %%\n", name, address, number, unsigned_number, unsigned_number, unsigned_number);
+	return_printf = printf("%m, name: %s, address: %p, number: %d, unsigned_number: %u,\nhexa_number: %x, hexa_number: %X, percent_sign: %%\n", name, NULL, number, unsigned_number, unsigned_number, unsigned_number);
+	return_ft_printf = ft_printf("%m, name: %s, address: %p, number: %d, unsigned_number: %u,\nhexa_number: %x, hexa_number: %X, percent_sign: %%\n", name, NULL, number, unsigned_number, unsigned_number, unsigned_number);
 
 	printf("return_printf: %d\n", return_printf);
 	printf("return_ft_printf: %d\n", return_ft_printf);
